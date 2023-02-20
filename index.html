@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="" method="post" class="form">
+        <div class="form">
+          <label for="name">Prénom : </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form">
+          <label for="lastname">Nom : </label>
+          <input type="text" name="lastname" id="lastname" required>
+        </div>
+        <div class="form">
+            <label for="age">Âge :</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        <fieldset class="form">
+            <legend>Sexe :</legend>
+            <div>
+                <label for="women">Femme</label>
+                <input type="radio" name="sex" id="women" required>
+            </div>
+            <div>
+                <label for="men">Homme</label>
+                <input type="radio" name="sex" id="men" required>
+            </div>
+        </fieldset>
+        <div>
+            <label for="email">Adresse mail :</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form">
+            <label for="adress">Adresse : </label>
+            <input type="text" name="adress" id="adress" required>
+        </div>
+        <div class="form">
+            <label for="postcod">Code Postal : </label>
+            <input type="number" name="postcod" id="postcod" min="01000" max="99999" required>
+        </div>
+        <div class="form">
+            <label for="city">Ville : </label>
+            <input type="text" name="city" id="city" required>
+        </div>
+        <div class="form">
+            <label for="work">Métier : </label>
+            <select id="work">
+                <option value="">Veuillez choisir une option</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="agroalimentaire">Agroalimentaire</option>
+                <option value="animaux">Animaux</option>
+                <option value="architecture">Architecture</option>
+            </select>
+        </div>
+        <fieldset class="form">
+            <legend>Nationalité :</legend>
+            <div>
+                <label for="french">Français</label>
+                <input type="radio" name="nationality" id="french" checked required>
+            </div>
+            <div>
+                <label for="other">Autre</label>
+                <input type="radio" name="nationality" id="other" required>
+            </div>
+        </fieldset>
+        <div>
+            <label for="birthday">Date de naissance :</label>
+            <input type="date" name="birthday" id="birthday" required>
+        </div>
+        <div>
+            <label for="birthcountry">Pays de naissance :</label>
+            <input type="text" name="birthcountry" id="birthcountry" required>
+        </div>
+        <div>
+            <label for="secu">Numéro de sécurité sociale :</label>
+            <input type="number" name="secu" id="secu" max="9999999999999" required>
+        </div>
+        <div>
+            <label for="passport">Numéro de passeport :</label>
+            <input type="text" name="passport" id="passport" maxlength="9">
+        </div>
+        <div>
+            <label for="passportdate">Date de délivrance du passeport :</label>
+            <input type="date" name="passportdate" id="passportdate">
+        </div>
+        <div>
+            <label for="passportvalid">Date de validité du passeport :</label>
+            <input type="date" name="passportvalid" id="passportvalid">
+        </div>
+        <div class="form">
+          <input type="submit" value="Valider">
+        </div>
+    </form>
+</body>
+</html>
